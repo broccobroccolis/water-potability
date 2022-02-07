@@ -10,7 +10,9 @@ The pipelines will be compared in terms of their performance in handling the wat
 <br>
 For the small data solution, the data used is the Water Quality dataset which can be accessed from https://www.kaggle.com/adityakadiwal/water-potability. It consists of 3276 rows and 10 columns. 
 For the big data solution, the data used is generated from the small data we discussed above, by duplicating it 512 times. It consists of 1677312 rows and 10 columns. The dataset used for this solution is not technically considered as actual big data because of technical limitations, however, we tried adjusting it to be as equivalent as big data as possible in terms of the volume of the data. We tried increasing the data size as much as possible within the range of our computation capability.
+
 Anyway, for both algorithms, the big data solution performs better than the small data solution as it has a slightly higher model accuracy. Precision and F1 scores of the algorithms are generally better in the big data pipeline. This might be because having more data points makes it easier for models to discover the underlying pattern of the data (Chawla, 2020). However, recall of algorithms using small data is higher than that using big data. 
+<br>
 In our case, precision is more important than recall, because getting a False Positive (unsafe water identified as safe water) is very dangerous and costly, and a False Negative (safe water identified as unsafe water) is not as much. The detailed comparison can be found at Appendix 10.27. 
 
 <br>
